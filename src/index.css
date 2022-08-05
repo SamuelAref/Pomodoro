@@ -1,0 +1,223 @@
+body{
+
+  background-color:#111827;
+}
+
+#logo{
+
+  width: 90px;
+  height:90px;
+  z-index: 2;
+  margin : 5px 0 0 5px;
+
+}
+
+#addTimer{
+
+  position: fixed;
+  bottom:0;
+  right: 0;
+  margin: 0 15px 90px 0;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #1f2937;
+}
+
+#addTimer:hover{
+
+  cursor: pointer;
+}
+
+#workStart{
+
+  background-color: #111827;
+  color: white;
+}
+
+.card-Container{
+
+  /* border: 1px solid white; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card{
+
+  margin: 20px;
+  width: 22%;
+  height: 230px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.timers{
+
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.counters{
+
+  width: 105%;
+  height: 30px;
+  border-radius: 10px;
+  /* border: 2px solid; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  /* background-color: #111827; */
+
+}
+
+.bar{
+
+  width: 81%;
+  height: 50%;
+  border: 2px solid #1f2937 ;
+  border-radius: 5px;
+  /* margin-left: 10px; */
+  overflow: hidden;
+  color: white;
+  margin-right: 5px;
+
+}
+
+#workTime, #breakTime, #wideBreakTime {
+
+  font-weight: 600;
+} 
+
+#progressBar{
+
+  /* border: 1px solid; */
+  background-color: rgb(38, 214, 38);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.2s linear;
+}
+
+#workBar #progressBar{
+
+  background-color: rgb(38, 214, 38);
+}
+
+#breakBar #progressBar{
+
+  background-color: orange;
+}
+
+#wideBar #progressBar{
+
+  background-color: blue;
+}
+
+
+/* buttons */
+
+.timer-container{
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  /* border: 1px solid; */
+  width: 60%;
+
+}
+#workStart{
+
+  border-radius: 10px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  border: none;
+  
+}
+
+#lap, #lapCounter{
+
+  font-weight: 600;
+}
+#workStart:hover{
+
+  background-color: #1f2937;
+  cursor: pointer;
+}
+
+#workTime,#breakTime,#wideBreakTime{
+
+  font-size: 14px;
+}
+
+#lapCounter{
+
+  margin: -7px 10px 0 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid; */
+}
+
+
+
+/* example modal */
+
+/* #exampleModal, .modal-dialog{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.modal-content{
+
+  border: 3px solid orange;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color: orange;
+  margin: 100px 0 0 100px ;
+}
+
+.modal-body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#breathingTime{
+
+  font-size: 85px;
+}
+
+.transition{
+
+  font-size: 18px;
+  text-align: justify;
+}
